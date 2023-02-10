@@ -30,17 +30,17 @@ Create DTO area for store and define the validation about my requisitions and a 
 
 After the process validation I defined in my app config some parameters for my Global Pipes:
 
-- 1. Transform: He will transform my data received to messages if you have something outside the validations that I specified.
-- 2. Whitelist: Invalidations in the data won't accuse mistakes in my console.
-- 3. forbidNonWhitelisted: Will go send the menssage if the data is invalid.
+1. Transform: He will transform my data received to messages if you have something outside the validations that I specified.
+2. Whitelist: Invalidations in the data won't accuse mistakes in my console.
+3. forbidNonWhitelisted: Will go send the menssage if the data is invalid.
 
 ## Async Validation
 
 For manage my database and block properties that i don't want to, I create a async function that search and block duplicate emails in different users. So, doing that a user don't create account with email that already exists in my database.
 
-- 1. Validation Area: Create a folder for my validations, and a file for validate only emails.
-- 2. Function that find: Create a async function inside <strong>User Repository</strong> that search an email in my database same as what was sent, and if it's not the same, return undefined.
-- 3. Validation Action: Sync my search function in as a constant within the validator that when not return undefined, execute a message defined in DTO.
-- 4. Decorator: In the finally, create a function that can used inside the DTO. In it I put properties for defined target, properties used, validation forms and what will be my validation method.
+1. Validation Area: Create a folder for my validations, and a file for validate only emails.
+2. Function that find: Create a async function inside <strong>User Repository</strong> that search an email in my database same as what was sent, and if it's not the same, return undefined.
+3. Validation Action: Sync my search function in as a constant within the validator that when not return undefined, execute a message defined in DTO.
+4. Decorator: In the finally, create a function that can used inside the DTO. In it I put properties for defined target, properties used, validation forms and what will be my validation method.
 
 Nest is [MIT licensed](LICENSE).
