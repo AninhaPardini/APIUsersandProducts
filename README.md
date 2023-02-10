@@ -1,4 +1,4 @@
-<a href="https://github.com/AninhaPardini"  target="blank"  ><img src="https://avatars.githubusercontent.com/u/108814319?v=4" width="200" alt="Aninha Pardini" align="center" border-radius="50px" /></a><h1 align="center" display="block">✏ Studies Notes to Alura course API in NestJS</h1>
+<a href="https://github.com/AninhaPardini" align="center" target="blank"  ><img src="https://avatars.githubusercontent.com/u/108814319?v=4" width="200" alt="Aninha Pardini"  border-radius="50px" /></a><h1 align="center" display="block">✏ Studies Notes to Alura course API in NestJS</h1>
 
 ## Registering Users
 
