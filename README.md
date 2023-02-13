@@ -43,4 +43,13 @@ For manage my database and block properties that i don't want to, I create a asy
 3. Validation Action: Sync my search function in as a constant within the validator that when not return undefined, execute a message defined in DTO.
 4. Decorator: In the finally, create a function that can used inside the DTO. In it I put properties for defined target, properties used, validation forms and what will be my validation method.
 
+## The User Entity
+
+1. Create a new file in user area called "user.entity" and create a new class with this name and transformed in a type for to quote that now my user repository is a User Entity array type.
+2. Started the remodeling in User Controller, first step was install uuid and yours dependences, after create a new instance calling the class UserEntity and rename my userDatas for userEntity, and changed the display when a user was created.
+
+## Create a listing DTO
+
+After create a User Entity and make changes, i need change my list so that not all user datas is shown in the API. For that create a new class called "userlist" in my DTO area, and make a constructor with the datas id and name, with that, i went to @Get and did treatment of the array where it will only return me the id and name of the created user.
+
 Nest is [MIT licensed](LICENSE).
